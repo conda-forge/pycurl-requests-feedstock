@@ -1,13 +1,13 @@
 {% set name = "pycurl-requests" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pycurl-requests-{{ version }}.tar.gz
-  sha256: 46159a07a9d409d9d1088e3f9afeadb8e602df655bc91622bccb21be7d0bb777
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 3191fe9cd6d6915682f0026b4df75f5df3d218b1de77d6acdb447035ae9defa4
 
 build:
   noarch: python
